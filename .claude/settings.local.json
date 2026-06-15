@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell($pkgs = \"lightweight-charts\",\"lucide-react\",\"next\",\"react\",\"server-only\",\"tailwindcss\"; foreach \\($p in $pkgs\\) { $path = Join-Path \"node_modules\" $p; if \\(Test-Path $path\\) { \"OK  $p\" } else { \"MISSING  $p\" } })",
+      "PowerShell(Rename-Item -Path \"c:\\\\Users\\\\sahxii\\\\ClaudeProject\\\\Invest Market\" -NewName \"Goldirham\")",
+      "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList '/c rename \"c:\\\\Users\\\\sahxii\\\\ClaudeProject\\\\Invest Market\" Goldirham' -Wait -NoNewWindow)",
+      "PowerShell(vercel --version 2>$null)",
+      "PowerShell(if \\(-not $?\\) { \"NOT_INSTALLED\" })",
+      "PowerShell(npm install -g vercel)",
+      "PowerShell(vercel --version)",
+      "PowerShell(git -C \"c:\\\\Users\\\\sahxii\\\\ClaudeProject\\\\Goldirham\" status 2>&1)",
+      "PowerShell(vercel whoami 2>&1)",
+      "PowerShell(gh --version 2>&1)",
+      "PowerShell(gh auth status 2>&1)"
+    ]
+  }
+}
